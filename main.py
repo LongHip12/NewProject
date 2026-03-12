@@ -24,7 +24,7 @@ keys = []
 keys_lock = threading.Lock()
 
 generated = 0
-target = 50
+target = 100
 
 def get_key():
     try:
@@ -45,7 +45,7 @@ def key_worker():
             break
         key = get_key()
         if key:
-            expire = time.time() + (400 * 60)
+            expire = time.time() + (390 * 60)
             with keys_lock:
                 if key not in [k["key"] for k in keys]:
                     keys.append({
