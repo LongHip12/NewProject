@@ -17,7 +17,7 @@ init(autoreset=True)
 
 app = Flask(__name__)
 
-VERIFY_URL = "http://nighthub.site/auth/verify?dungdachencomtao=ok"
+VERIFY_URL = "http://103.176.22.230/auth/getkey"
 API_KEY = "LonelyHubApiKeyByLongHip12"
 
 keys = []
